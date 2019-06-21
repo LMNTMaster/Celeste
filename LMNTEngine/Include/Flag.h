@@ -1,0 +1,141 @@
+#pragma once
+#include "Macro.h"
+
+LMNT_BEGIN
+
+enum SPACE
+{
+	SPACE_NONE = 0x0000,
+	SPACE_2D = 0x0001,
+	SPACE_3D = 0x0002,
+	SPACE_LOCAL = 0x0010,
+	SPACE_GLOBAL = 0x0020,
+	SPACE_WINDOW = 0x0040,
+	SPACE_DEVICE = 0x0080
+};
+
+enum DIRECTION
+{
+	DIR_CENTER = 0x0000,
+	DIR_LEFT = 0x0001,
+	DIR_TOP = 0x0002,
+	DIR_RIGHT = 0x0004,
+	DIR_BOTTOM = 0x0008,
+	DIR_FORWARD = 0x0010,
+	DIR_BACKWARD = 0x0020
+};
+
+// Animation Type
+enum ANIMATION_TYPE
+{
+	AT_NONE,
+	AT_ATLAS,
+	AT_FRAME, 
+	AT_CUSTOM,
+	AT_END
+};
+
+// Animation Option
+enum ANIMATION_OPTION
+{
+	AO_LOOP,
+	AO_STOP_AT_END,
+	AO_ONCE_RETURN,
+	AO_ONCE_DESTROY
+};
+
+enum PARAMETER_CONDITION
+{
+	PC_GRATER,
+	PC_LESS,
+	PC_EQUALS,
+	PC_NOT_EQUAL
+};
+
+enum PARAMETER_TYPE
+{
+	PT_BOOL,
+	PT_INT,
+	PT_FLOAT
+};
+
+
+
+enum RENDER_STATE
+{
+	RS_BLEND,
+	RS_RASTERIZER,
+	RS_DEPTHSTENCIL,
+	RS_END
+};
+
+
+enum DIMENSION_TYPE
+{
+	DT_2D = 0x02,
+	DT_3D = 0x03
+};
+
+enum SHADER_TYPE
+{
+	ST_VERTEX,
+	ST_PIXEL,
+	ST_END
+};
+
+enum AXIS
+{
+	AX_X,
+	AX_Y,
+	AX_Z,
+	AX_XR,
+	AX_YR,
+	AX_ZR,
+	AX_END
+};
+
+// Component Type
+enum COMPONENT_TYPE
+{
+	CT_RENDERER,
+	CT_COLLIDER,
+	CT_CAMERA,
+	CT_UI,
+	CT_CURSOR,
+	CT_BUTTON_COLLIDER,
+	CT_ANIMATOR,
+	CT_TILE,
+	CT_TEXT,
+	CT_END = 0xff
+};
+
+enum UI_TYPE
+{
+	UT_BUTTON,
+	UT_TEXTURE,
+};
+
+// Collider Type
+enum COLLIDER_TYPE
+{
+	CT_RECT,
+	CT_CIRCLE,	
+	CT_3D = 0xff,
+};
+
+
+enum CBUFFER_TRANSFER
+{
+	CBT_VERTEX = 0x1,
+	CBT_PIXEL = 0x2,
+	CBT_GEOMETRY = 0x4
+};
+
+
+enum RENDER_MODE
+{
+	RM_2D,
+	RM_3D
+};
+
+LMNT_END
