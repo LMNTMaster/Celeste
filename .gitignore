@@ -3,6 +3,7 @@
 *.ilk
 *.ipdb
 *.iobj
+*.ipch
 *.obj
 *.log
 *.tlog
