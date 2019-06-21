@@ -1,0 +1,17 @@
+*.pdb
+*.exp
+*.ilk
+*.ipdb
+*.iobj
+*.obj
+*.log
+*.tlog
+*.idb
+*.suo
+*.db
+*.opendb
+*.db-shm
+*.db-wal
+Todo.txt
+*.zip
+
